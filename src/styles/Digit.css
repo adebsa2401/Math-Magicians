@@ -1,0 +1,13 @@
+button {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border: 0.5px solid var(--gray-color);
+}
+
+.button-0 {
+  grid-column: 1 / span 2;
+}
+
+.button-op {
+  background-color: var(--orange-color);
+}
