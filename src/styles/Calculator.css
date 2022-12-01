@@ -1,0 +1,26 @@
+:root {
+  --gray-color: #858693;
+  --orange-color: #f4913e;
+  --white-color: #e0e0e0;
+  --black-color: #050708;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+}
+
+.display {
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  text-align: end;
+  padding: 10px 5px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 100%;
+}
