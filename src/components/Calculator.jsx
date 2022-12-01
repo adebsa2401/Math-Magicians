@@ -1,65 +1,55 @@
-import React from 'react';
+import { useState } from 'react';
 import Digit from './Digit';
 import '../styles/Calculator.css';
 
-export default class Calculator extends React.PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
+const updateState = (newState, setState) => {
+  setState((previousState) => (
+    { ...previousState, ...newState }
+  ));
+};
 
-    this.updateState = this.updateState.bind(this);
-    this.getState = this.getState.bind(this);
+const getDisplay = ({ total, next }) => {
+  // const { total, next } = state;
+
+  if (next) {
+    return next;
   }
 
-  getState = () => this.state;
+  if (total) {
+    return total;
+  }
 
-  updateState = (newState) => {
-    this.setState((previousState) => (
-      { ...previousState, ...newState }
-    ));
-  };
+  return '0';
+};
 
-  getDisplay = () => {
-    const { total, next } = this.state;
+export default function Calculator() {
+  const labels = [
+    'AC', '+/-', '%', '÷',
+    '7', '8', '9', 'x',
+    '4', '5', '6', '-',
+    '1', '2', '3', '+',
+    '0', '.', '=',
+  ];
 
-    if (next) {
-      return next;
-    }
+  const [state, setState] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-    if (total) {
-      return total;
-    }
-
-    return '0';
-  };
-
-  render() {
-    const labels = [
-      'AC', '+/-', '%', '÷',
-      '7', '8', '9', 'x',
-      '4', '5', '6', '-',
-      '1', '2', '3', '+',
-      '0', '.', '=',
-    ];
-
-    return (
-      <div className="calculator">
-        <span className="display">{this.getDisplay()}</span>
-        <div className="button-grid">
-          { labels.map((label) => (
-            <Digit
-              key={label}
-              label={label}
-              calculatorState={this.getState}
-              updateState={this.updateState}
-            />
-          )) }
-        </div>
+  return (
+    <div className="calculator">
+      <span className="display">{getDisplay(state)}</span>
+      <div className="button-grid">
+        { labels.map((label) => (
+          <Digit
+            key={label}
+            label={label}
+            calculatorState={() => state}
+            updateState={(state) => updateState(state, setState)}
+          />
+        )) }
       </div>
-    );
-  }
+    </div>
+  );
 }
