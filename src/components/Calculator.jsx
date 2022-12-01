@@ -6,9 +6,36 @@ export default class Calculator extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      display: '0',
+      total: null,
+      next: null,
+      operation: null,
     };
+
+    this.updateState = this.updateState.bind(this);
+    this.getState = this.getState.bind(this);
   }
+
+  getState = () => this.state;
+
+  updateState = (newState) => {
+    this.setState((previousState) => (
+      { ...previousState, ...newState }
+    ));
+  };
+
+  getDisplay = () => {
+    const { total, next } = this.state;
+
+    if (next) {
+      return next;
+    }
+
+    if (total) {
+      return total;
+    }
+
+    return '0';
+  };
 
   render() {
     const labels = [
@@ -19,13 +46,18 @@ export default class Calculator extends React.PureComponent {
       '0', '.', '=',
     ];
 
-    const { display } = this.state;
-
     return (
       <div className="calculator">
-        <span className="display">{display}</span>
+        <span className="display">{this.getDisplay()}</span>
         <div className="button-grid">
-          { labels.map((label) => <Digit key={label} label={label} />) }
+          { labels.map((label) => (
+            <Digit
+              key={label}
+              label={label}
+              calculatorState={this.getState}
+              updateState={this.updateState}
+            />
+          )) }
         </div>
       </div>
     );

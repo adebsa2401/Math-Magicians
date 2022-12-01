@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import calculate from '../logic/calculate';
 import '../styles/Digit.css';
 
 export default class Digit extends React.PureComponent {
   render() {
-    const { label } = this.props;
+    const { label, calculatorState, updateState } = this.props;
     const operators = ['÷', 'x', '-', '+', '='];
     let classNames = [];
 
@@ -19,11 +20,21 @@ export default class Digit extends React.PureComponent {
     classNames = classNames.join(' ');
 
     return (
-      <button type="button" className={classNames}>{ label }</button>
+      <button
+        type="button"
+        className={classNames}
+        onClick={() => {
+          updateState(calculate(calculatorState(), label));
+        }}
+      >
+        { label }
+      </button>
     );
   }
 }
 
 Digit.propTypes = {
   label: PropTypes.string.isRequired,
+  calculatorState: PropTypes.func.isRequired,
+  updateState: PropTypes.func.isRequired,
 };
