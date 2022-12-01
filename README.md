@@ -1,65 +1,183 @@
-# React and Redux
+<a name="readme-top"></a>
 
-If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
+<div align="center">
 
-## Set-up GitHub Actions
+  <img src="logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-This GitHub Action is going to run [ESLint](https://eslint.org/) and [Stylelint](https://stylelint.io/) to help you find style issues.
+  <h3><b>Math Magicians</b></h3>
 
-[Stylelint](https://stylelint.io/) is a linter for your stylesheets that helps you avoid errors and enforce conventions.
+</div>
 
-[ESLint](https://eslint.org/) is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+<!-- TABLE OF CONTENTS -->
 
-Please do the following **steps in this order**:
+# 📗 Table of Contents
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-    - **Remember** to use the file linked above
-    - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub Actions:
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
-![gh actions checks](../assets/images/gh-actions-eslint-stylelint-checks.png)
+<!-- PROJECT DESCRIPTION -->
 
-Click on the `Details` link to see the full output and the errors that need to be fixed:
+# 📖 Math Magicians <a name="about-project"></a>
 
-![gh actions failing checks](../assets/images/gh-actions-html-css-failing-checks.png)
+> **WikiShow** is a website on which the user can make simple calculations like addition, substraction, division, etc. Moreover, he can also see some quotes.
 
-## Set-up linters in your local env
+## 🛠 Built With <a name="built-with"></a>
 
-### ESLint
+### Tech Stack <a name="tech-stack"></a>
 
-1. Run 
-    ```
-    npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x  @babel/preset-react@7.x @babel/preset-react@7.x
-    ```
-    *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
-2. Copy [.eslintrc.json](./.eslintrc.json) and [.babelrc](./.babelrc) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx eslint .` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+    <li><a href="https://webpack.js.org/">Webpack</a></li>
+    <li><a href="https://babeljs.io/docs/en/">Babel</a></li>
+    <li><a href="https://jestjs.io/docs/getting-started">Jest</a></li>
+    <li><a href="https://nodejs.org/en/docs/">Node.js/npm</a></li>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
 
-### Stylelint
+<!-- Features -->
 
-1. Run
+### Key Features <a name="key-features"></a>
 
-   ```
-   npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-   ```
+- **The user can make simple mathematical operations such as addition, substraction, etc...**
+- **The user can see quotes**
 
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-2. Copy [.stylelintrc.json](./.stylelintrc.json) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+<!-- LIVE DEMO -->
 
-## Test/Deployment Actions
+## 🚀 Live Demo <a name="live-demo"></a>
 
-Feel free to add your own deployment actions which can run your tests and deploy to Heroku.
+- [Live Demo Link](https://adebsa2401.github.io/Math-Magicians)
 
-Make sure that you do not modify the [`.github/workflows/linters.yml`](.github/workflows/linters.yml) but that you create a separe GitHub Action workflow file for that.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+1. Start cloning this repository by entering the following command:
+
+<pre><code>git clone https://github.com/adebsa2401/Math-Magicians.git</code></pre>
+
+2. Install npm dependencies by running <pre><code>npm i</code></pre>
+
+3. Build assets by running <pre><code>npm run build</code></pre>
+
+4. Finally run <pre><code>npm start</code></pre> to start local node.js server. The project's entry file `index.html` should automatically open in your browser. If it doesn't, open your browser and head over to the following url: `http://localhost:3000`
+
+### Prerequisites
+
+In order to run this project you need:
+
+- [node.js / npm](https://nodejs.org/en/download/)
+
+### Setup
+
+Clone this repository to your desired folder:
+
+<pre><code>git clone https://github.com/adebsa2401/Math-Magicians.git</code></pre>
+
+### Install
+
+Install this project with:
+
+<pre><code>npm i</code></pre>
+
+### Usage
+
+To run the project, execute the following command:
+
+<pre><code>npm run build</code></pre>
+<pre><code>npm start</code></pre>
+
+### Run tests
+
+To run tests, run the following command:
+
+<pre><code>npm run test</code></pre>
+
+### Deployment
+
+You can deploy this project using:
+
+<pre><code>git subtree push --prefix public origin gh-pages</code></pre>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Ben Sales**
+
+- GitHub: [@adebsa2401](https://github.com/adebsa2401)
+- Twitter: [@Adebsa3](https://twitter.com/Adebsa3)
+- LinkedIn: [Ben Sales](https://www.linkedin.com/in/ben-sal%C3%A8s-2688651b6)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- **The user can make simple mathematical operations such as addition, substraction, etc...**
+- **The user can see quotes**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+Give a ⭐️ if you like this project!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+- Microverse
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
