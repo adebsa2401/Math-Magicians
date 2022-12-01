@@ -123,7 +123,7 @@ To run tests, run the following command:
 
 You can deploy this project using:
 
-<pre><code>git subtree push --prefix public origin gh-pages</code></pre>
+<pre><code>git subtree push --prefix build origin gh-pages</code></pre>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
