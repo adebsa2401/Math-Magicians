@@ -1,0 +1,415 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`All components renders correctly The Calculator component renders correctly 1`] = `
+<div
+  className="calculator"
+>
+  <span
+    className="display"
+  >
+    0
+  </span>
+  <div
+    className="button-grid"
+  >
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      AC
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      +/-
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      %
+    </button>
+    <button
+      className="button-op"
+      onClick={[Function]}
+      type="button"
+    >
+      ÷
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      7
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      8
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      9
+    </button>
+    <button
+      className="button-op"
+      onClick={[Function]}
+      type="button"
+    >
+      x
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      4
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      5
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      6
+    </button>
+    <button
+      className="button-op"
+      onClick={[Function]}
+      type="button"
+    >
+      -
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      1
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      2
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      3
+    </button>
+    <button
+      className="button-op"
+      onClick={[Function]}
+      type="button"
+    >
+      +
+    </button>
+    <button
+      className="button-0"
+      onClick={[Function]}
+      type="button"
+    >
+      0
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      .
+    </button>
+    <button
+      className="button-op"
+      onClick={[Function]}
+      type="button"
+    >
+      =
+    </button>
+  </div>
+</div>
+`;
+
+exports[`All components renders correctly The Digit component renders correctly The Digit component renders correctly with label + 1`] = `
+<button
+  className="button-op"
+  onClick={[Function]}
+  type="button"
+>
+  +
+</button>
+`;
+
+exports[`All components renders correctly The Digit component renders correctly The Digit component renders correctly with label 0 1`] = `
+<button
+  className="button-0"
+  onClick={[Function]}
+  type="button"
+>
+  0
+</button>
+`;
+
+exports[`All components renders correctly The Digit component renders correctly The Digit component renders correctly with label 1 1`] = `
+<button
+  className=""
+  onClick={[Function]}
+  type="button"
+>
+  1
+</button>
+`;
+
+exports[`All components renders correctly The Header component renders correctly 1`] = `
+<header>
+  <h1>
+    Math Magicians
+  </h1>
+  <nav>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      href="/calculator"
+      onClick={[Function]}
+    >
+      Calculator
+    </a>
+    <a
+      href="/quote"
+      onClick={[Function]}
+    >
+      Quote
+    </a>
+  </nav>
+</header>
+`;
+
+exports[`Test all components renders correctly The Calculator component renders correctly 1`] = `
+<div
+  className="calculator"
+>
+  <span
+    className="display"
+  >
+    0
+  </span>
+  <div
+    className="button-grid"
+  >
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      AC
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      +/-
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      %
+    </button>
+    <button
+      className="button-op"
+      onClick={[Function]}
+      type="button"
+    >
+      ÷
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      7
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      8
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      9
+    </button>
+    <button
+      className="button-op"
+      onClick={[Function]}
+      type="button"
+    >
+      x
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      4
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      5
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      6
+    </button>
+    <button
+      className="button-op"
+      onClick={[Function]}
+      type="button"
+    >
+      -
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      1
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      2
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      3
+    </button>
+    <button
+      className="button-op"
+      onClick={[Function]}
+      type="button"
+    >
+      +
+    </button>
+    <button
+      className="button-0"
+      onClick={[Function]}
+      type="button"
+    >
+      0
+    </button>
+    <button
+      className=""
+      onClick={[Function]}
+      type="button"
+    >
+      .
+    </button>
+    <button
+      className="button-op"
+      onClick={[Function]}
+      type="button"
+    >
+      =
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Test all components renders correctly The Digit component renders correctly The Digit component renders correctly with label + 1`] = `
+<button
+  className="button-op"
+  onClick={[Function]}
+  type="button"
+>
+  +
+</button>
+`;
+
+exports[`Test all components renders correctly The Digit component renders correctly The Digit component renders correctly with label 0 1`] = `
+<button
+  className="button-0"
+  onClick={[Function]}
+  type="button"
+>
+  0
+</button>
+`;
+
+exports[`Test all components renders correctly The Digit component renders correctly The Digit component renders correctly with label 1 1`] = `
+<button
+  className=""
+  onClick={[Function]}
+  type="button"
+>
+  1
+</button>
+`;
+
+exports[`Test all components renders correctly The Header component renders correctly 1`] = `
+<header>
+  <h1>
+    Math Magicians
+  </h1>
+  <nav>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      href="/calculator"
+      onClick={[Function]}
+    >
+      Calculator
+    </a>
+    <a
+      href="/quote"
+      onClick={[Function]}
+    >
+      Quote
+    </a>
+  </nav>
+</header>
+`;
