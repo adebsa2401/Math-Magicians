@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  createRoutesFromElements, createBrowserRouter, RouterProvider, Route,
+  createRoutesFromElements, createHashRouter, RouterProvider, Route,
 } from 'react-router-dom';
 import Root from './pages/Root';
 import HomePage from './pages/HomePage';
@@ -10,7 +10,7 @@ import QuotePage from './pages/QuotePage';
 
 export default class App extends React.PureComponent {
   render() {
-    const router = createBrowserRouter(
+    const router = createHashRouter(
       createRoutesFromElements(
         <Route path="/" element={<Root />}>
           <Route path="" element={<HomePage />} />
