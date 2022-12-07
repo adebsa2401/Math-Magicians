@@ -1,0 +1,27 @@
+.quote-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px;
+  background-color: lightgray;
+  min-height: 100px;
+  max-width: 70%;
+}
+
+.author {
+  align-self: flex-end;
+  justify-self: flex-end;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
