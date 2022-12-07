@@ -45,10 +45,11 @@ export default class Calculator extends React.PureComponent {
       '1', '2', '3', '+',
       '0', '.', '=',
     ];
+    const display = this.getDisplay();
 
     return (
       <div className="calculator">
-        <span className="display">{this.getDisplay()}</span>
+        <span className="display" role="textbox" aria-label={display}>{display}</span>
         <div className="button-grid">
           { labels.map((label) => (
             <Digit

@@ -11,7 +11,9 @@ exports[`All pages renders correctly The CalculatorPage component renders correc
     className="calculator"
   >
     <span
+      aria-label="0"
       className="display"
+      role="textbox"
     >
       0
     </span>
