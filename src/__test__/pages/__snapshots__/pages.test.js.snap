@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`All pages renders correctly The CalculatorPage component renders correctly 1`] = `
+<div
+  className="calculator-main"
+>
+  <h2>
+    Let's do some math!
+  </h2>
+  <div
+    className="calculator"
+  >
+    <span
+      aria-label="0"
+      className="display"
+      role="textbox"
+    >
+      0
+    </span>
+    <div
+      className="button-grid"
+    >
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="button-op"
+        onClick={[Function]}
+        type="button"
+      >
+        ÷
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="button-op"
+        onClick={[Function]}
+        type="button"
+      >
+        x
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="button-op"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="button-op"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+      <button
+        className="button-0"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className=""
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+      <button
+        className="button-op"
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`All pages renders correctly The HomePage component renders correctly 1`] = `
+<div
+  className="home-main"
+>
+  <h2>
+    Welcome to our page!
+  </h2>
+  <p>
+    Ea amet enim minim Lorem exercitation incididunt. Mollit consequat deserunt amet enim labore enim cupidatat irure nulla nisi. Commodo esse in exercitation id aliquip commodo sit cupidatat ullamco enim nisi voluptate eiusmod cillum. Qui sunt ex fugiat id quis cupidatat elit tempor. Non sit amet enim sint ullamco officia culpa Lorem magna culpa nostrud.
+  </p>
+  <p>
+    Est ipsum deserunt amet quis do quis incididunt consectetur aliqua ea dolor exercitation. Duis sint aliquip velit quis. Adipisicing elit aliquip ipsum officia do tempor irure mollit amet anim labore.
+  </p>
+</div>
+`;
+
+exports[`All pages renders correctly The QuotePage component renders correctly 1`] = `
+<div
+  className="quote-main"
+>
+  <p
+    className="quote"
+  >
+    Mathematics is not about numbers, equations, computations, or algorithms: it's about understanding.
+    <span
+      className="author"
+    >
+      –William Paul Thurston
+    </span>
+  </p>
+</div>
+`;
