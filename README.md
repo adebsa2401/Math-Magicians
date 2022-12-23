@@ -37,7 +37,7 @@
 
 # 📖 Math Magicians <a name="about-project"></a>
 
-> **WikiShow** is a website on which the user can make simple calculations like addition, substraction, division, etc. Moreover, he can also see some quotes.
+> **Math Magicians** is a website on which the user can make simple calculations like addition, substraction, division, etc. Moreover, he can also see some quotes.
 
 ## 🛠 Built With <a name="built-with"></a>
 
